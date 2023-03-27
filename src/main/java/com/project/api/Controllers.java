@@ -20,6 +20,8 @@ import java.util.List;
 public class Controllers {
     @Autowired
     private UserRepository userRepository;
+
+
     @PostMapping("/registering")
     public ResponseEntity<UserInfo> RegisterUser(@RequestBody UserInfo user){
         //save user details on database
